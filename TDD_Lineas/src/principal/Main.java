@@ -7,6 +7,7 @@ package principal;
 
 import dibujo.Lineas;
 import dibujo.Lienzo;
+import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import javax.swing.JFrame;
@@ -29,7 +30,8 @@ public class Main {
         Lienzo lienzo = new Lienzo();
         ventana.setDefaultCloseOperation(EXIT_ON_CLOSE);
         ventana.setSize(600,600);
-        ventana.getContentPane().add(lienzo);  
+        ventana.getContentPane().add(lienzo);      
+        ventana.setLocationRelativeTo(null);
         ventana.setVisible(true);
         
     }

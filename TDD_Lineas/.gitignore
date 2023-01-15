@@ -1,3 +1,4 @@
 /build/
-.mf
-.xml
+/dist/
+*.mf
+*.xml
