@@ -19,8 +19,7 @@ public class Main {
      */
     public static void main(String[] args) {
         Tenis2 tenis2 = new Tenis2();
-        System.out.println(tenis2.NumeroSets(1));
-        System.out.println(tenis2.puntos("AAABBBABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"));
+        
         
 
     }

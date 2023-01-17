@@ -16,6 +16,22 @@ import java.util.Scanner;
  */
 public  class Tenis2 {
     
+     ArrayList<Character> partido = new ArrayList<>();
+    
+    
+    
+    
+    
+    
+    
+    
+    public ArrayList<Character> getPartido() {
+        return partido;
+    }
+
+    public void setPartido(ArrayList<Character> partido) {
+        this.partido = partido;
+    }
     
 }
 

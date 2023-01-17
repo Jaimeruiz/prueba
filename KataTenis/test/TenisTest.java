@@ -5,12 +5,14 @@
  */
 
 
+import java.util.ArrayList;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import principal.Tenis2;
 
 /**
  *
@@ -42,5 +44,16 @@ public class TenisTest {
      public void test1(){
        Tenis2 tenis = new Tenis2();
      }
+     
+     @Test
+     public void array(){
+       Tenis2 tenis = new Tenis2();
+       ArrayList<Character> prueba = new ArrayList<>();
+       prueba.add('A');
+       tenis.getPartido().add('A');
+       assertEquals(prueba, tenis.getPartido());
+     }
        
+     
+     
 }
