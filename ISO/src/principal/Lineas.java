@@ -24,6 +24,8 @@ public class Lineas {
         setX2(x2);
         setY2(y2);
     }
+    
+    public Lineas() {}
   
    public void pintar(Graphics grafico){
        grafico.drawLine(getX1(), getY1(), getX2(), getY2());
