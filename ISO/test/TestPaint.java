@@ -46,7 +46,11 @@ public class TestPaint {
     public void pintarNor1() {
         Lineas lineas = new Lineas();
         Lienzo lienzo = new Lienzo();
+        assertEquals(lineas.getY2() - 50, lienzo.dibujarNor1());
         assertEquals(1, lienzo.getListarLineas().size());
+        lienzo.dibujarNor1();
+        assertEquals(2, lienzo.getListarLineas().size());
+        assertEquals(lienzo.getListarLineas().get(1).getY2(), lineas.getY2() - 100);
     }
     @BeforeClass
     public static void setUpClass() {

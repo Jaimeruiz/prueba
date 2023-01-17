@@ -15,7 +15,7 @@ import javax.swing.JToggleButton;
  * @author jaime
  */
 public class Lienzo extends JPanel {
-    
+    Lineas lineas = new Lineas();
     JToggleButton Lap, Arr, Abj;
     JButton nor1, sur1, est1, oes1;
     
@@ -25,7 +25,11 @@ public class Lienzo extends JPanel {
         setListarLineas(new ArrayList<>());
     }
 
-    
+    public int dibujarNor1(){
+        getListarLineas().add(new Lineas(lineas.getX1(), lineas.getY1(),lineas.getX1(), lineas.getY1() - 50));
+        lineas.setY1(lineas.getY1() - 50);
+        return lineas.getY1();
+    }
     
     
     
