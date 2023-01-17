@@ -38,8 +38,8 @@ public class TestPaint {
         Lienzo lienzo = new Lienzo();
         Lineas lineas = new Lineas() {};
         ArrayList<Lineas> arrayprueba = new ArrayList<>();
-        arrayprueba.add(new Lineas(200,200,250,200));
-        assertEquals(arrayprueba.size(),lienzo.listarLineas);
+        assertEquals(arrayprueba,lienzo.listarLineas);
+        
     }
     
     
