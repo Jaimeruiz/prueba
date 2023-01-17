@@ -31,7 +31,9 @@ public class Lienzo extends JPanel {
         return lineas.getY1();
     }
     
-    
+    public int dibujarSur1(){
+        return 0;
+    }
     
     
     public ArrayList<Lineas> getListarLineas() {

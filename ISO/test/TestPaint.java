@@ -52,6 +52,17 @@ public class TestPaint {
         assertEquals(2, lienzo.getListarLineas().size());
         assertEquals(lienzo.getListarLineas().get(1).getY2(), lineas.getY2() - 100);
     }
+    
+    
+    @Test
+    public void pintarSur1() {
+        Lineas lineas = new Lineas();
+        Lienzo lienzo = new Lienzo();
+        assertEquals(lineas.getX2(), lienzo.dibujarSur1());
+    }
+    
+    
+    
     @BeforeClass
     public static void setUpClass() {
     }
