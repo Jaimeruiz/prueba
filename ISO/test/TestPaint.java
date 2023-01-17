@@ -10,6 +10,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import principal.Lineas;
 
 /**
  *
@@ -18,6 +19,11 @@ import static org.junit.Assert.*;
 public class TestPaint {
     
     public TestPaint() {
+    }
+    
+    @Test
+    public void Lineas() {
+        Lineas lineas = new Lineas();
     }
     
     @BeforeClass
