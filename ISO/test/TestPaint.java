@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+import java.util.ArrayList;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -27,9 +28,20 @@ public class TestPaint {
         Lineas lineas = new Lineas();
     }
     
-    @Test void Lienzo() {
+    @Test 
+    public void Lienzo() {
         Lienzo lienzo = new Lienzo();
     }
+    
+    @Test
+    public void array() {
+        Lienzo lienzo = new Lienzo();
+        Lineas lineas = new Lineas() {};
+        ArrayList<Lineas> arrayprueba = new ArrayList<>();
+        arrayprueba.add(new Lineas(200,200,250,200));
+        assertEquals(arrayprueba.size(),lienzo.listarLineas);
+    }
+    
     
     @BeforeClass
     public static void setUpClass() {
