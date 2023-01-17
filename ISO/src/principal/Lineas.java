@@ -5,15 +5,18 @@
  */
 package principal;
 
+import java.awt.Dimension;
 import java.awt.Graphics;
+import java.awt.Toolkit;
 
 /**
  *
  * @author jaime
  */
 public class Lineas {
-
-  private int x1, y1, x2, y2;
+  
+  Dimension pantalla = Toolkit.getDefaultToolkit().getScreenSize();
+  private int x1 = pantalla.width, y1 = pantalla.height, x2 = x1, y2 = y1;
 
     public Lineas(int x1, int y1, int x2, int y2) {
         setX1(x1);
