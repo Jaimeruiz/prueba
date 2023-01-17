@@ -26,6 +26,10 @@ public class TestPaint {
         Lineas lineas = new Lineas();
     }
     
+    @Test void Lienzo() {
+        Lienzo lienzo = new Lienzo();
+    }
+    
     @BeforeClass
     public static void setUpClass() {
     }
