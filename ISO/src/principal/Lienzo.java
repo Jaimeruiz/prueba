@@ -6,18 +6,23 @@
 package principal;
 
 import java.util.ArrayList;
+import javax.swing.JButton;
+import javax.swing.JPanel;
+import javax.swing.JToggleButton;
 
 /**
  *
  * @author jaime
  */
-public class Lienzo {
+public class Lienzo extends JPanel {
     
+    JToggleButton Lap, Arr, Abj;
+    JButton nor1, sur1, est1, oes1;
     
-    public ArrayList<Lineas> listarLineas = new ArrayList<>();
+    public ArrayList<Lineas> listarLineas = null;
 
     public Lienzo() {
-        
+        setListarLineas(new ArrayList<>());
     }
 
     

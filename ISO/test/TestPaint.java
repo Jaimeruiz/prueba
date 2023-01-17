@@ -42,7 +42,12 @@ public class TestPaint {
         
     }
     
-    
+    @Test
+    public void pintarNor1() {
+        Lineas lineas = new Lineas();
+        Lienzo lienzo = new Lienzo();
+        assertEquals(1, lienzo.getListarLineas().size());
+    }
     @BeforeClass
     public static void setUpClass() {
     }
