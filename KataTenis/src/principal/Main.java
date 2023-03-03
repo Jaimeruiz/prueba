@@ -19,9 +19,9 @@ public class Main {
      */
     public static void main(String[] args) {
         Tenis2 tenis2 = new Tenis2();
-        
-        
-
+        tenis2.PartidoPorPantalla();
+        tenis2.marcador();
+        tenis2.resultado();
     }
     
 }
