@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/lux/bootstrap.min.css"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cl
+      oudflare.com/ajax/libs/bootstrap-icons/1.5.0/bootstrap-icons.min.css"
+    />
+
+  </head>
+  <body>
+    <div class="container mt-5">
+
+      <%- include('header')%>     
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Buy and Rent</h2>
+          <p>
+            Here you can search, rent and buy the best apartments in the city of
+            Madrid, Spain
+          </p>
+          <p>
+            With <%= title %> you get access to thousands of apartments for rent
+            and for sale in Madrid
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h2>Information</h2>
+          <p>Here you can find information about Madrid</p>
+          <p>
+            With <%= title %> you get access to thousands of apartments for rent
+            and for sale in Madrid
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <%- include('footer')%>
+
+  </body>
+</html>
