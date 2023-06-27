@@ -1,0 +1,14 @@
+<Orderdetails>
+	<Customer id="12">
+		<fname from="from">String</fname>
+		<cname>String</cname>
+		<destination Country="C" Delivdate="DD"/>
+		<email>Email</email>
+		<eid>EID</eid>
+	</Customer>
+	<Customer id="13">
+		<cname>String</cname>
+		<destination Country="C" Delivdate="DD"/>
+		<email>Email</email>
+	</Customer>
+</Orderdetails>

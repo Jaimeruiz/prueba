@@ -1,0 +1,1 @@
+count(doc("xquery_ejercicio1.xml")/bib/book[author="Abiteboul"])

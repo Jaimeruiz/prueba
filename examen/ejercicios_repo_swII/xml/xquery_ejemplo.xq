@@ -1,0 +1,1 @@
+doc("xquery_ejemplo1.xml")

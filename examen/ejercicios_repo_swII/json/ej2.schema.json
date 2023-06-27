@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema#",
+  "$id": "http://example.com/schemas/painting.schema.json",
+  "type": "object",
+  "title": "Painting",
+  "description": "Painting information",
+  "required": ["squadName", "homeTown", "active", "members"],
+  "properties": {
+    "squadName": {
+      "type": "string"
+    },
+    "homeTown": {
+      "type": "string"
+    },
+    "formed": {
+      "type": "integer"
+    },
+    "secretBase": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "members": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/member" },
+      "minItems": 1
+    }
+  },
+  "$defs": {
+    "member": {
+      "type": "object",
+      "title": "Member",
+      "required": ["name",  "age"],
+      "properties": {
+        "name": { "type": "string"},
+        "age": { "type": "number", "minimum": 0 },
+        "secretIdentity": { "type": "string"},
+        "powers": {
+           "type": "array",
+           "items": {"type": "string"},
+           "minimumItems": 1 }
+      }
+    }
+  }
+}

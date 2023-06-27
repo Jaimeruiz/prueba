@@ -1,0 +1,14 @@
+//project/data(@name)
+/Wikimedia/projects/project/data(@name)
+
+/Wikimedia/projects/project/editions/data(edition[@language="Spanish"])
+/Wikimedia/projects/project/editions/edition[@language="Spanish"]/text()
+
+/Wikimedia/projects/project/editions/*
+/Wikimedia/projects/project/editions/edition
+//edition
+
+/Wikimedia/projects/project/editions/edition[contains(text(),"wikipedia")]
+/Wikimedia/projects/project[@name="Wikipedia"]/editions/edition
+
+//project[@name="Wiktionary"]/editions/edition[4]
